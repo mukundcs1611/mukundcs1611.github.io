@@ -10,7 +10,7 @@ Page is being updated now , refresh the page to the see the updated content.
 
 - For now  head on to my github page and see all the work I have done, I have the best readme files which will definitely not help you in any way .
 
-[Back to my GitHub](www.github.com/mukundcs1611)
+[Back to my GitHub](https://www.github.com/mukundcs1611)
 ```
 
 
@@ -18,5 +18,5 @@ Page is being updated now , refresh the page to the see the updated content.
 
 Do you still wanna get connected ?
 
-- Email:mukundcs1611@gmail.com
+- Email: mukundcs1611@gmail.com
 
