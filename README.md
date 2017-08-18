@@ -27,5 +27,5 @@ Do you still wanna get connected ?
 
 
 ```markdown
-- If you didn't like the site ,you are welcome to make it better. Anyone? 
+- If you didn't like the page ,you are welcome to make it better. Anyone? 
 ```
