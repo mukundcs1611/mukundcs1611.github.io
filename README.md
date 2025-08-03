@@ -1,8 +1,10 @@
 ## Welcome 
 
+( YEAR 2017 )
 Basic Info about me :
    1. I write terrible code, but I do it everyday hoping I will be better one day (Almost there! Just a light year away)
    2. I have a masters degree in Computers and I dont know how I got that far.
+
 
 Jokes apart, I did my masters specializing in Artificial Intelligence and Computer Architecture. I have worked in the software industry for a small period of time. I am currently in search of a job. My current interests include- making my code cloud ready , writing software which follows Microservices architecture, getting better in writing prediction algorithms, getting acquainted with Angular4 , D3.js.
 
@@ -26,6 +28,14 @@ Do you still wanna get connected ?
 - Email: mukundcs1611@gmail.com
 
 
+
 ```markdown
 - If you didn't like the page ,you are welcome to make it better. Anyone? 
 ```
+
+August 2025 
+Now I introduce myself as a 
+
+A technical lead with core strengths with microservices arch , kubernetes, AWS, Azure, AI/ML application programming . A seasoned professional with proven capability of ramping up projects and software from the start.
+
+
