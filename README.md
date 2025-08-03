@@ -1,48 +1,57 @@
-## Welcome 
+# 👋 Welcome!
 
+**3 August 2025**
 
-3 August 2025
-A technical lead with core strengths with microservices arch , kubernetes, AWS, Azure, AI/ML application programming . A seasoned professional with proven capability of ramping up software teams and projects .
- 
-My technical journey start with JAVA + Selenium. Moving to Python , tensorflow, AI/ML (2017-2019) , Springboot microservices (2019-2025), React JS ( 2021-2025),AWS all through my career , Azure (2021-2023)
+I'm a technical lead with deep expertise in microservices architecture, Kubernetes, AWS, Azure, and AI/ML application programming. Over the years, I've built and led high-performing software teams, delivering complex projects with impact.
 
+---
 
-```markdown
-YEAR 2017
-Basic Info about me :
-   1. I write terrible code, but I do it everyday hoping I will be better one day (Almost there! Just a light year away)
-   2. I have a masters degree in Computers and I dont know how I got that far.
+## 🚀 My Technical Journey
 
+- **Started with:** Java & Selenium
+- **Explored:** Python, TensorFlow, AI/ML (2017–2019)
+- **Mastered:** Spring Boot microservices (2019–2025), ReactJS (2021–2025)
+- **Cloud:** AWS (throughout), Azure (2021–2023)
 
-Jokes apart, I did my masters specializing in Artificial Intelligence and Computer Architecture. I have worked in the software industry for a small period of time. I am currently in search of a job. My current interests include- making my code cloud ready , writing software which follows Microservices architecture, getting better in writing prediction algorithms, getting acquainted with Angular4 , D3.js.
+---
 
-I also ,
- 1. did a bit of GPU programming using CUDA, Used OpenCV for applying filters on images.
- 2. Implemented working models of many machine learning concepts in Matlab and Java
- 3. Worked on a super computer (TACC-Stampede) for a parallel programming assignment used MPI for communication between multiple compute instances.
- 4.  have an experience of setting up a multi-cluster Hadoop environment and writing distributed code in Java and Python
- 5. Know a bit about containers and how they ease deployment of an application.(Has some projects in my github which does it)
+## 🛠️ About Me (2017 Edition — The Early Days)
 
+Back in 2017, I was laying the foundation for my tech journey:
 
+- Earned a Master’s in Computer Science, specializing in Artificial Intelligence and Computer Architecture.
+- Started hands-on with Java and Selenium, then expanded into Python, Matlab, and early AI/ML projects.
+- Explored GPU programming with CUDA and image processing using OpenCV.
+- Built and deployed machine learning models in both Matlab and Java.
+- Tackled parallel programming assignments on the TACC-Stampede supercomputer, using MPI for distributed computing.
+- Set up multi-cluster Hadoop environments and wrote distributed code in Java and Python.
+- Began experimenting with containers to streamline application deployment.
 
-- Head on to my github page and see all the work I have done, I have the best readme files which will definitely not help you in any way ;)
+These experiences shaped my passion for building scalable, cloud-ready software and set the stage for my growth in microservices, cloud platforms, and AI/ML.
 
-[Back to my GitHub](https://www.github.com/mukundcs1611)
+---
 
-### Contact
+## 🏆 More About Me
 
-Do you still wanna get connected ?
+- Leadership style: Collaborative, growth-focused, and hands-on.
+- Key achievements: Built and scaled multiple microservices platforms; mentored and ramped up software teams.
+- Certifications: AWS Seasoned dev, Azure Fundamentals.
+- Soft skills: Communication, adaptability, problem-solving, and continuous learning.
+
+---
+
+## 📂 Explore More
+
+Check out my [GitHub page](https://www.github.com/mukundcs1611) for all my projects (and some legendary README files that may or may not help you).
+
+---
+
+## 📬 Contact
+
+Want to connect?
 
 - Email: mukundcs1611@gmail.com
 
+---
 
-
-```markdown
-- If you didn't like the page ,you are welcome to make it better. Anyone? 
-```
-```
-
-
-
-
-
+*Didn’t like this page? Feel free to make it better. Anyone?*
