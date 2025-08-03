@@ -1,6 +1,14 @@
 ## Welcome 
 
-( YEAR 2017 )
+
+3 August 2025
+A technical lead with core strengths with microservices arch , kubernetes, AWS, Azure, AI/ML application programming . A seasoned professional with proven capability of ramping up software teams and projects .
+ 
+My technical journey start with JAVA + Selenium. Moving to Python , tensorflow, AI/ML (2017-2019) , Springboot microservices (2019-2025), React JS ( 2021-2025),AWS all through my career , Azure (2021-2023)
+
+
+```markdown
+YEAR 2017
 Basic Info about me :
    1. I write terrible code, but I do it everyday hoping I will be better one day (Almost there! Just a light year away)
    2. I have a masters degree in Computers and I dont know how I got that far.
@@ -32,10 +40,9 @@ Do you still wanna get connected ?
 ```markdown
 - If you didn't like the page ,you are welcome to make it better. Anyone? 
 ```
+```
 
-August 2025 
-Now I introduce myself as a 
 
-A technical lead with core strengths with microservices arch , kubernetes, AWS, Azure, AI/ML application programming . A seasoned professional with proven capability of ramping up projects and software from the start.
+
 
 
