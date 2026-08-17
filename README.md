@@ -1,57 +1,29 @@
-# 👋 Welcome!
+# mukundcs1611.github.io
 
-**17 August 2026**
+Source for my personal site, published with GitHub Pages at
+[mukundcs1611.github.io](https://mukundcs1611.github.io).
 
-I'm a technical lead with deep expertise in microservices architecture, Kubernetes, AWS, Azure, and AI/ML application programming. Over the years, I've built and led high-performing software teams, delivering complex projects with impact.
-
----
-
-## 🚀 My Technical Journey
-
-- **Started with:** Java & Selenium
-- **Explored:** Python, TensorFlow, AI/ML (2017–2019)
-- **Mastered:** Spring Boot microservices (2019–present), ReactJS (2021–present)
-- **Cloud:** AWS (throughout), Azure (2021–2023)
+`index.html` is the site. It's a single static page with no build step — GitHub Pages
+serves it directly on push to `master`.
 
 ---
 
-## 🛠️ About Me (2017 Edition — The Early Days)
+## About
 
-Back in 2017, I was laying the foundation for my tech journey:
+Srinivas Mukund Chavali — Staff Software Engineer, Hyderabad, India.
 
-- Earned a Master’s in Computer Science, specializing in Artificial Intelligence and Computer Architecture.
-- Started hands-on with Java and Selenium, then expanded into Python, Matlab, and early AI/ML projects.
-- Explored GPU programming with CUDA and image processing using OpenCV.
-- Built and deployed machine learning models in both Matlab and Java.
-- Tackled parallel programming assignments on the TACC-Stampede supercomputer, using MPI for distributed computing.
-- Set up multi-cluster Hadoop environments and wrote distributed code in Java and Python.
-- Began experimenting with containers to streamline application deployment.
+12+ years in enterprise Java platform engineering (since 2014), specializing in
+high-performance distributed systems and enterprise identity & security.
 
-These experiences shaped my passion for building scalable, cloud-ready software and set the stage for my growth in microservices, cloud platforms, and AI/ML.
+- **2023 – 2026** — Staff Software Engineer, Appen
+- **2021 – 2023** — Senior Principal Software Engineer, Piazza Consulting Group
+- **2017 – 2021** — Member of Technical Staff 3, VMware
+- **2014 – 2015** — Associate Java Developer, TEKsystems / Magna Infotech / Synechron
 
 ---
 
-## 🏆 More About Me
-
-- **Leadership style:** collaborative, growth-focused, and hands-on.
-- **Key achievements:** built and scaled multiple microservices platforms; mentored and ramped up software teams.
-- **Cloud depth:** deep, hands-on AWS experience across my career — architecture, deployment, and operations, learned by building rather than by exam. Azure for production workloads (2021–2023).
-- **Soft skills:** communication, adaptability, problem-solving, and continuous learning.
-
----
-
-## 📂 Explore More
-
-Check out my [GitHub page](https://www.github.com/mukundcs1611) for all my projects (and some legendary README files that may or may not help you).
-
----
-
-## 📬 Contact
-
-Want to connect?
+## Contact
 
 - Email: mukundcs1611@gmail.com
-
----
-
-*Didn’t like this page? Feel free to make it better. Anyone?*
+- LinkedIn: [linkedin.com/in/mukundchavali](https://linkedin.com/in/mukundchavali)
+- GitHub: [@mukundcs1611](https://github.com/mukundcs1611)
