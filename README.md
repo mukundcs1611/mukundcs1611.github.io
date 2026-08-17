@@ -1,6 +1,6 @@
 # 👋 Welcome!
 
-**3 August 2025**
+**17 August 2026**
 
 I'm a technical lead with deep expertise in microservices architecture, Kubernetes, AWS, Azure, and AI/ML application programming. Over the years, I've built and led high-performing software teams, delivering complex projects with impact.
 
@@ -10,7 +10,7 @@ I'm a technical lead with deep expertise in microservices architecture, Kubernet
 
 - **Started with:** Java & Selenium
 - **Explored:** Python, TensorFlow, AI/ML (2017–2019)
-- **Mastered:** Spring Boot microservices (2019–2025), ReactJS (2021–2025)
+- **Mastered:** Spring Boot microservices (2019–present), ReactJS (2021–present)
 - **Cloud:** AWS (throughout), Azure (2021–2023)
 
 ---
@@ -33,10 +33,10 @@ These experiences shaped my passion for building scalable, cloud-ready software 
 
 ## 🏆 More About Me
 
-- Leadership style: Collaborative, growth-focused, and hands-on.
-- Key achievements: Built and scaled multiple microservices platforms; mentored and ramped up software teams.
-- Certifications: AWS Seasoned dev, Azure Fundamentals.
-- Soft skills: Communication, adaptability, problem-solving, and continuous learning.
+- **Leadership style:** collaborative, growth-focused, and hands-on.
+- **Key achievements:** built and scaled multiple microservices platforms; mentored and ramped up software teams.
+- **Cloud depth:** deep, hands-on AWS experience across my career — architecture, deployment, and operations, learned by building rather than by exam. Azure for production workloads (2021–2023).
+- **Soft skills:** communication, adaptability, problem-solving, and continuous learning.
 
 ---
 
