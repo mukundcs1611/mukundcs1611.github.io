@@ -41,7 +41,7 @@
   function renderStats(root) {
     var s = stats();
     var items = [
-      [s.dsa, "LeetCode problems"],
+      [(window.LEARNING_TOTALS && window.LEARNING_TOTALS.leetcode) || s.dsa, "LeetCode solved · " + s.dsa + " during the break"],
       [s.lld, "LLD builds & labs"],
       [s.hld + s.genai, "HLD & GenAI builds"],
       [s.activeDays, "days logged"]
