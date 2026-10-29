@@ -23,6 +23,16 @@ window.LEARNING_LOG = [
     title: "Transformers → GenAI course",
     note: "Working through a transformers-to-GenAI video course a few hours a day, from attention fundamentals up to modern LLM applications." },
 
+  { date: "2026-10-27", to: "2026-10-28", track: "genai",
+    title: "Completed: Mastering the Updated LangChain Framework",
+    note: "LinkedIn Learning course on agents, tools and modern Python workflows. Built alongside it: a uv-managed project wired to several model providers (OpenAI, Groq, Google), and a first tool-calling agent with create_agent.",
+    link: { href: "https://www.linkedin.com/learning/certificates/fa740c56662326dcefe08d5f73b616a5851a90a817af08accf41053fb422f638", label: "Certificate" } },
+
+  { date: "2026-10-29", track: "genai",
+    title: "Securing Generative AI — started",
+    note: "LinkedIn Learning course on GenAI security strategies, methods and tools, starting with how prompt-injection attacks work.",
+    link: { href: "https://www.linkedin.com/learning/securing-generative-ai-strategies-methodologies-tools-and-best-practices", label: "Course" } },
+
   // ---------- LLD ----------
   { date: "2026-08-16", to: "2026-08-17", track: "lld",
     title: "Parking lot billing engine",
@@ -49,6 +59,10 @@ window.LEARNING_LOG = [
   { date: "2026-10-09", track: "hld",
     title: "Mock project: CloudFront video-delivery lab",
     note: "Packaged a source video into HLS with three bitrate renditions, 4-second segments and a master playlist, as the origin for CloudFront delivery. It's the hands-on half of the video-streaming design." },
+
+  { date: "2026-10-25", track: "hld",
+    title: "Distributed rate limiter across regions",
+    note: "Local Redis per region with a static quota split, so the hot path never crosses the WAN. Only premium keys may synchronously borrow a chunk of quota from the other region's primary: latency is traded for fairness where it matters." },
 
   // ---------- DSA ----------
   { date: "2026-09-28", track: "dsa",
@@ -105,5 +119,7 @@ window.LEARNING_LOG = [
 window.LEARNING_NEXT = [
   { track: "hld", title: "Zanzibar-style authorization" },
   { track: "hld", title: "Video streaming — end-to-end design on top of the CloudFront lab" },
+  { track: "hld", title: "Resumable, chunked uploads for unbounded file sizes" },
+  { track: "genai", title: "Keeping LLM answers grounded as context grows" },
   { track: "genai", title: "Agent infrastructure and agent-to-agent protocols" }
 ];
