@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 640" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#4a5568"/>
+    </marker>
+  </defs>
+  <rect width="1100" height="640" fill="#ffffff"/>
+
+  <text x="40" y="22" font-size="18" font-weight="bold" fill="#1a202c">HLS video delivery with adaptive bitrate (ABR)</text>
+
+  <!-- Pipeline -->
+  <rect x="40" y="60" width="150" height="80" rx="10" fill="#f5f7fb" stroke="#4a5568"/>
+  <text x="115" y="95" font-size="15" font-weight="bold" text-anchor="middle" fill="#1a202c">Source video</text>
+  <text x="115" y="117" font-size="12" text-anchor="middle" fill="#4a5568">bbb.mp4</text>
+
+  <rect x="230" y="60" width="190" height="80" rx="10" fill="#f5f7fb" stroke="#4a5568"/>
+  <text x="325" y="90" font-size="15" font-weight="bold" text-anchor="middle" fill="#1a202c">ffmpeg</text>
+  <text x="325" y="110" font-size="12" text-anchor="middle" fill="#4a5568">encode 3 qualities</text>
+  <text x="325" y="126" font-size="12" text-anchor="middle" fill="#4a5568">cut into 4s segments</text>
+
+  <rect x="460" y="40" width="250" height="230" rx="10" fill="#fff7e6" stroke="#d69e2e"/>
+  <text x="585" y="64" font-size="15" font-weight="bold" text-anchor="middle" fill="#1a202c">S3 origin (private)</text>
+  <g font-family="Menlo, Consolas, monospace" font-size="12" fill="#2d3748">
+    <text x="478" y="92">bbb/</text>
+    <text x="490" y="112">master.m3u8  ← lists renditions</text>
+    <text x="490" y="134">v0/ index.m3u8  720p</text>
+    <text x="506" y="152">seg_000.ts … seg_014.ts</text>
+    <text x="490" y="176">v1/ index.m3u8  480p</text>
+    <text x="506" y="194">seg_000.ts … seg_014.ts</text>
+    <text x="490" y="218">v2/ index.m3u8  360p</text>
+    <text x="506" y="236">seg_000.ts … seg_014.ts</text>
+  </g>
+
+  <rect x="750" y="60" width="160" height="80" rx="10" fill="#e6f0ff" stroke="#3182ce"/>
+  <text x="830" y="90" font-size="15" font-weight="bold" text-anchor="middle" fill="#1a202c">CloudFront edge</text>
+  <text x="830" y="110" font-size="12" text-anchor="middle" fill="#4a5568">caches manifests</text>
+  <text x="830" y="126" font-size="12" text-anchor="middle" fill="#4a5568">and segments</text>
+
+  <rect x="950" y="60" width="120" height="80" rx="10" fill="#e8f7ee" stroke="#38a169"/>
+  <text x="1010" y="95" font-size="15" font-weight="bold" text-anchor="middle" fill="#1a202c">Player</text>
+  <text x="1010" y="117" font-size="12" text-anchor="middle" fill="#4a5568">hls.js</text>
+
+  <g stroke="#4a5568" stroke-width="1.6" fill="none" marker-end="url(#arr)">
+    <line x1="190" y1="100" x2="228" y2="100"/>
+    <line x1="420" y1="100" x2="458" y2="100"/>
+    <line x1="910" y1="100" x2="948" y2="100"/>
+  </g>
+  <line x1="748" y1="100" x2="712" y2="100" stroke="#4a5568" stroke-width="1.6" marker-end="url(#arr)"/>
+  <text x="730" y="90" font-size="10" text-anchor="middle" fill="#4a5568">miss</text>
+  <text x="929" y="90" font-size="11" text-anchor="middle" fill="#4a5568">GET</text>
+
+  <!-- Ladder -->
+  <rect x="40" y="320" width="370" height="200" rx="10" fill="#f5f7fb" stroke="#4a5568"/>
+  <text x="60" y="348" font-size="15" font-weight="bold" fill="#1a202c">Bitrate ladder</text>
+  <g font-size="13" fill="#2d3748">
+    <text x="60" y="378">v0</text><text x="110" y="378">720p</text><text x="190" y="378">~2.8 Mbps</text>
+    <text x="60" y="404">v1</text><text x="110" y="404">480p</text><text x="190" y="404">~1.4 Mbps</text>
+    <text x="60" y="430">v2</text><text x="110" y="430">360p</text><text x="190" y="430">~0.8 Mbps</text>
+  </g>
+  <text x="60" y="466" font-size="12" fill="#4a5568">Keyframes are aligned across renditions,</text>
+  <text x="60" y="484" font-size="12" fill="#4a5568">so the player can switch cleanly at any</text>
+  <text x="60" y="502" font-size="12" fill="#4a5568">segment boundary.</text>
+
+  <!-- ABR loop -->
+  <text x="560" y="312" font-size="15" font-weight="bold" fill="#1a202c">ABR loop — runs in the player, before every segment</text>
+
+  <rect x="560" y="330" width="240" height="64" rx="10" fill="#f3e8ff" stroke="#805ad5"/>
+  <text x="680" y="356" font-size="13" font-weight="bold" text-anchor="middle" fill="#1a202c">1. Load master.m3u8</text>
+  <text x="680" y="376" font-size="12" text-anchor="middle" fill="#4a5568">renditions + their bitrates</text>
+
+  <rect x="850" y="330" width="220" height="64" rx="10" fill="#f3e8ff" stroke="#805ad5"/>
+  <text x="960" y="356" font-size="13" font-weight="bold" text-anchor="middle" fill="#1a202c">2. Pick a rendition</text>
+  <text x="960" y="376" font-size="12" text-anchor="middle" fill="#4a5568">highest bitrate that fits speed</text>
+
+  <rect x="850" y="470" width="220" height="64" rx="10" fill="#f3e8ff" stroke="#805ad5"/>
+  <text x="960" y="496" font-size="13" font-weight="bold" text-anchor="middle" fill="#1a202c">3. Download next segment</text>
+  <text x="960" y="516" font-size="12" text-anchor="middle" fill="#4a5568">e.g. v2/seg_004.ts</text>
+
+  <rect x="560" y="470" width="240" height="64" rx="10" fill="#f3e8ff" stroke="#805ad5"/>
+  <text x="680" y="496" font-size="13" font-weight="bold" text-anchor="middle" fill="#1a202c">4. Measure speed</text>
+  <text x="680" y="516" font-size="12" text-anchor="middle" fill="#4a5568">bytes ÷ time, plus buffer level</text>
+
+  <g stroke="#805ad5" stroke-width="1.6" fill="none" marker-end="url(#arr)">
+    <line x1="800" y1="362" x2="848" y2="362"/>
+    <line x1="960" y1="394" x2="960" y2="468"/>
+    <line x1="850" y1="502" x2="802" y2="502"/>
+    <path d="M800,480 C830,440 830,420 850,394"/>
+  </g>
+  <text x="835" y="452" font-size="11" fill="#805ad5">repeat</text>
+
+  <line x1="1010" y1="140" x2="1010" y2="300" stroke="#38a169" stroke-width="1.6" stroke-dasharray="5,4"/>
+  <line x1="1010" y1="300" x2="1010" y2="328" stroke="#38a169" stroke-width="1.6" marker-end="url(#arr)"/>
+
+  <text x="40" y="580" font-size="12" fill="#4a5568">Slow network → speed estimate drops → player requests v2 (360p) segments.  Fast network → climbs back to v0 (720p).</text>
+  <text x="40" y="600" font-size="12" fill="#4a5568">The CDN never decides quality: it just serves whichever file the player asks for.</text>
+</svg>

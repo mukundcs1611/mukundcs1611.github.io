@@ -60,6 +60,11 @@ window.LEARNING_LOG = [
     title: "Mock project: CloudFront video-delivery lab",
     note: "Packaged a source video into HLS with three bitrate renditions, 4-second segments and a master playlist, as the origin for CloudFront delivery. It's the hands-on half of the video-streaming design." },
 
+  { date: "2026-10-22", to: "2026-11-01", track: "hld",
+    title: "CloudFront lab — caching, ABR, Origin Shield and a fake live stream",
+    note: "Private S3 origin behind CloudFront (OAC), played with hls.js. On a throttled network ABR dropped from 720p to 360p. Tokens in the cache key: 10 unique tokens, 10 misses. A 2s playlist TTL kept a fake live stream smooth; at 60s the player stalled, then jumped to the live edge. With Origin Shield on, a second edge got a hit on a segment it had never fetched; with it off, it went back to S3. Surprises: the managed CORS policy dropped its header whenever Chrome sent a priority header (fixed with origin override), and new objects only seemed to cache from the second request.",
+    link: { href: "abr-streaming-flow.svg", label: "ABR diagram" } },
+
   { date: "2026-10-25", track: "hld",
     title: "Distributed rate limiter across regions",
     note: "Local Redis per region with a static quota split, so the hot path never crosses the WAN. Only premium keys may synchronously borrow a chunk of quota from the other region's primary: latency is traded for fairness where it matters." },
