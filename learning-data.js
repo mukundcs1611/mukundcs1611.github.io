@@ -33,6 +33,10 @@ window.LEARNING_LOG = [
     note: "LinkedIn Learning course on GenAI security strategies, methods and tools, starting with how prompt-injection attacks work.",
     link: { href: "https://www.linkedin.com/learning/securing-generative-ai-strategies-methodologies-tools-and-best-practices", label: "Course" } },
 
+  { date: "2026-11-02", to: "2026-11-04", track: "genai",
+    title: "Mock project: GenAI lab on Apple silicon (MLX)",
+    note: "Four modules on local models. Generation: the prompt goes through one parallel prefill pass that fills the KV cache and gives the first token, then one pass per token until EOS, max_tokens or a stop sequence; temperature reshapes probabilities but never the ranking. RAG eval: BM25 wins exact codes, dense wins paraphrases, hybrid with RRF gets both; low hit@k means fix recall, high hit@k with low MRR means add a reranker. Fine-tuning: SFT is the data, LoRA/QLoRA is how weights get updated; RAG for knowledge, fine-tuning for behaviour. LLM gateway: JWT identity and RBAC, PII redaction, response cache, model routing, per-tenant token quotas, OTel-style traces and a hash-chained audit log. My understanding builds on a pre-LLM QA system I worked on years ago (keyword search, learning to rank, a reader model); what changed is that the LLM generates the answer instead of extracting it." },
+
   // ---------- LLD ----------
   { date: "2026-08-16", to: "2026-08-17", track: "lld",
     title: "Parking lot billing engine",
@@ -158,12 +162,15 @@ window.LEARNING_LOG = [
          [46, "permutations", "Permutations"],
          [39, "combination-sum", "Combination Sum"],
          [23, "merge-k-sorted-lists", "Merge k Sorted Lists"],
-         [73, "set-matrix-zeroes", "Set Matrix Zeroes"]] }
+         [73, "set-matrix-zeroes", "Set Matrix Zeroes"]] },
+  { date: "2026-11-04", track: "dsa",
+    title: "Two pointers — trapping rain water",
+    lc: [[42, "trapping-rain-water", "Trapping Rain Water"]] }
 ];
 
 // Headline totals shown in the stat cards. Update these by hand.
 window.LEARNING_TOTALS = {
-  leetcode: "66"   // all-time total on LeetCode; the log lists problems solved since the break
+  leetcode: "67"   // all-time total on LeetCode; the log lists problems solved since the break
 };
 
 window.LEARNING_NEXT = [
