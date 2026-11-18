@@ -73,10 +73,6 @@ window.LEARNING_LOG = [
     title: "Distributed rate limiter across regions",
     note: "Local Redis per region with a static quota split, so the hot path never crosses the WAN. Only premium keys may synchronously borrow a chunk of quota from the other region's primary: latency is traded for fairness where it matters." },
 
-  { date: "2026-11-15", to: "2026-11-16", track: "hld",
-    title: "Production incidents from past roles, written up as design lessons",
-    note: "Went back through incidents I handled and wrote each one as a story. One index per tenant oversharded a search cluster; merging into one index first hit a mapping explosion, so the template kept only the common fields. The migration: a production snapshot restored offline, bulk-loaded into the new index, restored back to production, then a live delta sync and a cutover in a quiet window. A point-in-time DB restore also rolls back any rotated secret stored in that DB. A tracking call in the login flow with no timeout turned a service decommission into login 504s. Just-in-time user creation has to re-check identity links on every login, not just the first. A Java 11 → 21 migration moved whole teams at a time through a mesh-level filter instead of a random percentage, so every request stayed traceable." },
-
   { date: "2026-11-17", track: "hld",
     title: "Multi-tenancy and identity federation, revisited from a past platform",
     note: "Wrote down how tenant isolation actually worked on a platform I worked on. Organisations → teams → projects, logically separated but all in one shared DB. Access was scoped at the API layer: each call resolves team and user privileges from the auth info and blocks before the data layer. team_id went into queries wherever possible, but by convention, not enforced. Sharding was by a unit-of-work UUID, not by tenant, so there was no tenant-wise isolation, and large projects took a big share of downstream capacity until their data-access patterns were optimised. Redis keys were prefixed project:user:. On identity: a read-only Keycloak user-storage SPI federated users from two legacy Postgres user DBs, checked after Keycloak's own DB in priority order. Users were imported on first login with no password change, which left two IDs per user." },
@@ -173,12 +169,16 @@ window.LEARNING_LOG = [
          [73, "set-matrix-zeroes", "Set Matrix Zeroes"]] },
   { date: "2026-11-04", track: "dsa",
     title: "Two pointers — trapping rain water",
-    lc: [[42, "trapping-rain-water", "Trapping Rain Water"]] }
+    lc: [[42, "trapping-rain-water", "Trapping Rain Water"]] },
+  { date: "2026-11-17", track: "dsa",
+    title: "Dynamic programming — LIS and Word Break",
+    lc: [[300, "longest-increasing-subsequence", "Longest Increasing Subsequence"],
+         [139, "word-break", "Word Break"]] }
 ];
 
 // Headline totals shown in the stat cards. Update these by hand.
 window.LEARNING_TOTALS = {
-  leetcode: "67"   // all-time total on LeetCode; the log lists problems solved since the break
+  leetcode: "69"   // all-time total on LeetCode; the log lists problems solved since the break
 };
 
 window.LEARNING_NEXT = [
